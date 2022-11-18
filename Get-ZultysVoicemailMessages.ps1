@@ -1,6 +1,6 @@
 Write-Host "Welcome to the Zultys Voicemail mass downloader. `n This will loop through all messages in your mailbox and save them to a folder of your choice." -ForegroundColor Cyan
 $SaveFolderPath = Read-Host "Please enter the path (no trailing \) where to save your voicemails"
-Write-Host "Please Note: You will need to use the browser developer tools to retrieve your voicemails. `n Please avoid opening your voicemail area once you've signed into WebZAC" -ForegroundColor Yellow
+Write-Host "Please Note: You will need to use the browser developer tools to retrieve your session GUID. `n Please avoid opening your voicemail area once you've signed into WebZAC" -ForegroundColor Yellow
 Write-Host ""Open Dev Tools, login to webzac, and pull the session GUID that is inside the get request""
 $SessionGUID = Read-Host "Please enter the session guid you've copied here. Do not include anything but the guid"
 $zultysUrl = "https://$(Read-Host 'Enter the hostname of your phone system.')"
